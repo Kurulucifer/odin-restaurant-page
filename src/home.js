@@ -5,6 +5,7 @@ function createHome() {
     home.className = "home";
     
     const splash = document.createElement("img");
+    splash.className = "splash";
     splash.src = splashImage;
     splash.height = "500";
     splash.width = "750";

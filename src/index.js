@@ -1,5 +1,8 @@
 import "./stylesheet.css"
 import createHome from "./home.js";
+import createMenu from "./menu.js";
+import createAbout from "./about.js";
+import createContact from "./contact.js";
 
 const content = document.getElementById("content");
 
@@ -8,28 +11,30 @@ const menuTab = document.getElementById("menuTab");
 const aboutTab = document.getElementById("aboutTab");
 const contactTab = document.getElementById("contactTab");
 
-const empty = document.createElement("div");
-empty.textContent = "empty div";
-
 const home = createHome();
-
-function swapContent(newContent) {
-    content.removeChild(content.firstChild);
-    content.appendChild(newContent);
-}
+const menu = createMenu();
+const about = createAbout();
+const contact = createContact();
 
 homeTab.addEventListener("click", () => {
     swapContent(home);
 })
 
 menuTab.addEventListener("click", () => {
-    swapContent(empty);
+    swapContent(menu);
 })
 
 aboutTab.addEventListener("click", () => {
-    swapContent(empty);
+    swapContent(about);
 })
 
 contactTab.addEventListener("click", () => {
-    swapContent(empty);
+    swapContent(contact);
 })
+
+function swapContent(newContent) {
+    content.removeChild(content.firstChild);
+    content.appendChild(newContent);
+}
+
+swapContent(home);
