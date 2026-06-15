@@ -1,0 +1,22 @@
+Home, Menu, About, and Contact tabs
+
+The contents inside the div.content are all made with JavaScript only. 
+
+index.js takes the initial page load and tab-switching logic.
+
+home.js, menu.js, about.js, and contact.js should each take their own tabs.
+
+Each of those creates a div element, adds the appropriate content/styles to it then appends it to the DOM, somehow.
+Should I make that function take the div.content as an arg to append to? Surely that works.
+Or the function just returns a div that I append manually in index.js. 
+
+Home -> a picture or two (of the establishment or food idk), brief description, service hours, address(es).
+Menu -> three or four items with pictures, the rest in text maybe
+About -> owner, chefs, service workers
+Contact -> an email form
+
+Let's try not to get too caught up in the visuals. 
+REMEMBER to test the visuals out first in the HTML to get a feel.
+And to make it easier to code in JavaScript as a template.
+
+Honestly let's just use the Krusty Krab as a template lmao
