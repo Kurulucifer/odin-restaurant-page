@@ -22,6 +22,12 @@ header {
     align-items: center;
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .splash {
     border: 2px solid blue;
 }
