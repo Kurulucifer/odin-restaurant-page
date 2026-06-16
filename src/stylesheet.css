@@ -47,3 +47,30 @@ header {
 .menu-row > img {
     border: 2px solid blue;
 }
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.founder > img {
+    width: 40%;
+}
+
+.worker-items {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+}
+
+.worker-item {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    place-items: center;
+}
+
+.worker-item > img {
+    width: 30%
+}

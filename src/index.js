@@ -37,4 +37,4 @@ function swapContent(newContent) {
     content.appendChild(newContent);
 }
 
-swapContent(home);
+// swapContent(home);
