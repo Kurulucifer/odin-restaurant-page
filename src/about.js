@@ -32,7 +32,7 @@ function createAbout() {
         "hi I'm squidward!!!",
         squidwardImg,
         "A picture of Squidward Tentacles, cashier.",
-    )
+    );
     squidward.className = squidward.className + " squidward";
 
     const spongebob = createWorkerItem(
@@ -40,7 +40,7 @@ function createAbout() {
         "hi I'm spongebob!!!",
         spongebobImg,
         "A picture of Spongebob Squarepants, fry cook.",
-    )
+    );
     spongebob.className = spongebob.className + " spongebob"
 
     workerItems.appendChild(squidward);

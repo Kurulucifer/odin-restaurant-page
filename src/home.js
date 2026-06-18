@@ -17,8 +17,8 @@ function createHome() {
     const bodyText = document.createElement("div");
     bodyText.textContent = "The Krusty Krab is world-renowned Michelin 3-star restaurant operating just off the coast of Santa Monica Pier.";
 
-    home.appendChild(splash)
     home.appendChild(header);
+    home.appendChild(splash)
     home.appendChild(bodyText);
 
     return home;
