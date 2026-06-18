@@ -2,7 +2,11 @@ function createContact() {
     const contact = document.createElement("div");
     contact.className = "contact";
 
-    contact.textContent = "here's how to get in contact";
+    const title = document.createElement("h1");
+    title.className = "title";
+    title.textContent = "Contact";
+
+    contact.appendChild(title);
 
     return contact;
 }

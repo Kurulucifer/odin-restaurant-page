@@ -85,3 +85,23 @@ header {
 .worker-item.spongebob > img {
     width: 60%
 }
+
+.contacts {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-line > .contact-line-item {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
