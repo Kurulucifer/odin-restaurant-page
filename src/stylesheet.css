@@ -68,9 +68,16 @@ header {
 .worker-item {
     display: grid;
     grid-template-columns: 400px 400px;
-    place-items: center;
 }
 
 .worker-item > img {
-    width: 30%
+    place-self: center;
+}
+
+img.squidward {
+    width: 40%;
+}
+
+img.spongebob {
+    width: 60%
 }

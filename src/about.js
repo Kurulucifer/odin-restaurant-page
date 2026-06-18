@@ -16,8 +16,6 @@ function createAbout() {
     const worker1Img = document.createElement("img");
     worker1Img.src = krabsImg;
 
-
-
     about.appendChild(title);
 
     return about;
