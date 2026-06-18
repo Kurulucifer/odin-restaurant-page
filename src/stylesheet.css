@@ -74,10 +74,14 @@ header {
     place-self: center;
 }
 
-img.squidward {
+.worker-item > div {
+    align-self: center;
+}
+
+.worker-item.squidward > img {
     width: 40%;
 }
 
-img.spongebob {
+.worker-item.spongebob > img {
     width: 60%
 }

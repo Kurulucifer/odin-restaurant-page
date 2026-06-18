@@ -15,31 +15,36 @@ function createMenu() {
     title.textContent = "Menu";
 
     // name, desc, img, alt
-    const row1 = createMenuItem("Deluxe Krabby Patty",
+    const row1 = createMenuItem(
+        "Deluxe Krabby Patty",
         "Our signature dish, made with only the freshest ingredients and our signature secret sauce.",
         krabbyPrattyImg,
         "A picture of a Krabby Patty.",
     );
 
-    const row2 = createMenuItem("Krabby Patty",
+    const row2 = createMenuItem(
+        "Krabby Patty",
         "Our signature dish, but with double the meat and double the satisfaction.",
         deluxePattyImg,
         "A picture of a Deluxe Krabby Patty.",
     );
 
-    const row3 = createMenuItem("Double Triple Bossy Patty",
+    const row3 = createMenuItem(
+        "Double Triple Bossy Patty",
         "Our signature dish, but with double everything. Maybe not pickles, if you prefer.",
         doubleTripleImg,
         "A picture of a Double Triple Bossy Patty.",
     );
 
-    const row4 = createMenuItem("Krusty Dog",
+    const row4 = createMenuItem(
+        "Krusty Dog",
         "Our signature meat mix wrapped in a freshly made hot dog roll.",
         krustyDogImg,
         "A picture of a Krusty Dog (a hot dog).",
     );
 
-    const row5 = createMenuItem("Krusty Krab Pizza (NEW!)",
+    const row5 = createMenuItem(
+        "Krusty Krab Pizza (NEW!)",
         "Our signature dish, but now in a new, flatter form factor shareable with friends and family. For a limited time only, extra toppings are 1% off!",
         krustyPizzaImg,
         "A picture of the all new Krusty Krab Pizza.",
@@ -70,9 +75,11 @@ function createMenuItem(name, desc, img, alt) {
     rowName.textContent = name;
     const rowDesc = document.createElement("div");
     rowDesc.textContent = desc
+
     const rowText = document.createElement("div");
     rowText.appendChild(rowName);
     rowText.appendChild(rowDesc);
+
     row.appendChild(rowImg);
     row.appendChild(rowText);
 
