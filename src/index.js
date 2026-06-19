@@ -33,7 +33,9 @@ contactTab.addEventListener("click", () => {
 })
 
 function swapContent(newContent) {
-    content.removeChild(content.firstChild);
+    if (content.firstChild) {
+        content.removeChild(content.firstChild);
+    }
     content.appendChild(newContent);
 }
 
